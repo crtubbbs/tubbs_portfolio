@@ -101,7 +101,7 @@
     "href": "Projects/project1.html",
     "title": "Client Report - What’s in a name?",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\ndefining df\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
     "crumbs": [
       "DS250 Projects",
       "Project 1"
@@ -112,7 +112,7 @@
     "href": "Projects/project1.html#elevator-pitch",
     "title": "Client Report - What’s in a name?",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\ndefining df\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
     "crumbs": [
       "DS250 Projects",
       "Project 1"
@@ -123,7 +123,7 @@
     "href": "Projects/project1.html#questiontask-1",
     "title": "Client Report - What’s in a name?",
     "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nHow does your name at your birth year compare to its use historically?\nMy name, Caleb, holds an intriguing history in terms of its popularity over time. In the year of my birth, 2002, it reached its peak with 11,655 thousand kids being named Caleb. Before that period, the name wasn’t as widely utilized. However, in the years following my birth, its popularity has been on a gradual decline.\n\n\nSets birth year and all tie births to variables\n# Include and execute your code here\n\nbirth = df.query('name == \"Caleb\" and year == 2002')\nalltime = df.query('name == \"Caleb\"')\n\n\n::: {#cell-Q1 chart .cell execution_count=4}\n\ndisplaying totals of kids named caleb in 2002\n# Include and execute your code here\ndisplay(birth.filter([\"year\",\"name\",\"Total\"]))\n\n\n\n\n\n\n\n\n\nyear\nname\nTotal\n\n\n\n\n57024\n2002\nCaleb\n11655.0\n\n\n\n\n\n2002 Total kids named Caleb\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Table of kids named caleb’ execution_count=5}\n\ntable of the name Caleb and its history\nfig = px.bar(alltime, x='year', y='Total')\nfig.add_vline(x=2002)\n\n\n                                                \n\n:::",
+    "text": "QUESTION|TASK 1\nHow does your name at your birth year compare to its use historically?\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\nbirth = df.query('name == \"Caleb\" and year == 2002')\nalltime = df.query('name == \"Caleb\"')\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q1 chart .cell execution_count=4}\n\nplot example\n# Include and execute your code here\ndisplay(birth.filter([\"year\",\"name\"]))\n\n\n\n\n\n\n\n\n\nyear\nname\n\n\n\n\n57024\n2002\nCaleb\n\n\n\n\n\nMy useless chart\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=5}\n\ntable example\n# Include and execute your code here\npx.bar(alltime, x='year', y='Total')\n\n\n                                                \n\n:::",
     "crumbs": [
       "DS250 Projects",
       "Project 1"
@@ -134,7 +134,7 @@
     "href": "Projects/project1.html#questiontask-2",
     "title": "Client Report - What’s in a name?",
     "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nIf I talked to someone on the phone named Brittany there would be many assumptions that I make about her age. First thing I would guess is that she or he is about 33-34 based on the fact that the name Brittany peaked in 1990 so depending on the month they would fall into that category. I would be surprised if their age was anywhere older than 40 or younger than 24.\n\n\ndefining the query of people named Brittany and getting the year and total correct\nbrit = df.query('name == \"Brittany\"').filter(['name','year','Total'])\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot of when brittany was a popular name\nfig = px.bar(brit, x='year', y='Total')\nfig.add_vline(x=1990)\n\n\n                                                \nUse of the Name Brittany\n\n:::",
+    "text": "QUESTION|TASK 2\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\ndf.query('name == \"Caleb\"').filter(['name','year','Total'])\n\n\n\n\n\n\n\n\n\nname\nyear\nTotal\n\n\n\n\n56958\nCaleb\n1916\n7.0\n\n\n56959\nCaleb\n1917\n6.0\n\n\n56960\nCaleb\n1918\n5.0\n\n\n56961\nCaleb\n1919\n5.0\n\n\n56962\nCaleb\n1920\n16.0\n\n\n...\n...\n...\n...\n\n\n57033\nCaleb\n2011\n10016.0\n\n\n57034\nCaleb\n2012\n9943.0\n\n\n57035\nCaleb\n2013\n9570.0\n\n\n57036\nCaleb\n2014\n9187.0\n\n\n57037\nCaleb\n2015\n8727.0\n\n\n\n\n80 rows × 3 columns\n\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=8}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
     "crumbs": [
       "DS250 Projects",
       "Project 1"
@@ -145,7 +145,7 @@
     "href": "Projects/project1.html#questiontask-3",
     "title": "Client Report - What’s in a name?",
     "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?\nThe notable trends through the data is that the name Mary has always been the most popular name of them. The names have gone up and down over time but in the past 45 years the names have started to become less and less common. 1946-1957 was by far the most popular time for the names to be given.\n\n\nputting names into a list\nnames = ['Mary', 'Martha', 'Peter', 'Paul']\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nFiltering the correct data for the names\nfiltered_data = df[df['name'].isin(names) & (df['year'] &gt;= 1920) & (df['year'] &lt;= 2000)]\n\n\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Name Usage Comparison’ execution_count=10}\n\nPlotting the names and showing the differences that they have over time\nfig = px.bar(filtered_data, x='year', y='Total', color='name',\n             labels={'year': 'Year', 'Total': 'Total Occurrences'},\n             color_discrete_map={'Mary': 'blue', 'Martha': 'red', 'Peter': 'green', 'Paul': 'purple'})\n\n\nfig.add_vline(x=(1920 + 2000) / 2, line_dash=\"dash\", line_color=\"black\", annotation_text=\"Midpoint\")\n\n\nfig.show()\n\n\n                                                \n\n:::",
+    "text": "QUESTION|TASK 3\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q3 chart .cell execution_count=10}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=11}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?",
     "crumbs": [
       "DS250 Projects",
       "Project 1"
@@ -433,16 +433,5 @@
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-4",
-    "href": "Projects/project1.html#questiontask-4",
-    "title": "Client Report - What’s in a name?",
-    "section": "QUESTION|TASK 4",
-    "text": "QUESTION|TASK 4\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\nYou can see from the bar chart that the name Luke started to be more used after the first few movies of Star Wars came out. As time went on more and more people began to name their kids Luke and this can be largely due to the movies. When any of the Star Wars movies came out it would only take a year or two for the name to begin to spike in popularity.\n::: {#cell-Q4 graph .cell .tbl-cap-location-top tbl-cap=‘Name Usage Comparison’ execution_count=11}\n\nPlotting the name luke\nname = 'Luke'\n\nfiltered_data = df[df['name'] == name]\n\n\nfig = px.bar(filtered_data, x='year', y='Total',\n             title=f'Name Usage for {name} (1920-2000)',\n             labels={'year': 'Year', 'Total': 'Total Occurrences'})\n\nreference_years = [1977, 1980, 1983, 1999, 2002, 2005, 2015]\n\nfor year in reference_years:\n    fig.add_vline(x=year, line_dash=\"dash\", line_color=\"black\")\n\n\nfig.show()\n\n\n                                                \n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
   }
 ]

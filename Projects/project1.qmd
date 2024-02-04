@@ -39,7 +39,7 @@ import plotly.express as px
 Looking at the history of names is a very strong way of seeing how data con flucuate and change over time. Many names have times when they are poular versus when they become uupopular and people quit naming their kids those certain names. This project is an amazing way to see how this really works and what names are popular when. From seeing how different movies can affect a person being named to seeing how the Bible can affect people getting named. The possibilites are truly endless when it comes to naming your children.
 ```{python}
 #| label: project data
-#| code-summary: defining df
+#| code-summary: Read and format project data
 # Include and execute your code here
 df = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
 ```
@@ -76,11 +76,11 @@ display(birth.filter(["year","name","Total"]))
 
 ```{python}
 #| label: Q1 table
-#| code-summary: table of the name Caleb and its history
-#| tbl-cap: "Table of kids named caleb "
+#| code-summary: table example
+#| tbl-cap: "Table of "
 #| tbl-cap-location: top
-fig = px.bar(alltime, x='year', y='Total')
-fig.add_vline(x=2002)
+# Include and execute your code here
+px.bar(alltime, x='year', y='Total')
 ```
 
 
@@ -88,25 +88,47 @@ fig.add_vline(x=2002)
 
 If you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?
 
-If I talked to someone on the phone named Brittany there would be many assumptions that I make about her age. First thing I would guess is that she or he is about 33-34 based on the fact that the name Brittany peaked in 1990 so depending on the month they would fall into that category. I would be surprised if their age was anywhere older than 40 or younger than 24.
+_type your results and analysis here_
 
 ```{python}
 #| label: Q2
-#| code-summary: defining the query of people named Brittany and getting the year and total correct
+#| code-summary: Read and format data
+# Include and execute your code here
 
-
-brit = df.query('name == "Brittany"').filter(['name','year','Total'])
+df.query('name == "Caleb"').filter(['name','year','Total'])
 ```
 
 _include figures in chunks and discuss your findings in the figure._
 
 ```{python}
 #| label: Q2 chart
-#| code-summary: plot of when brittany was a popular name
-#| fig-cap: "Use of the Name Brittany"
+#| code-summary: plot example
+#| fig-cap: "My useless chart"
 #| fig-align: center
-fig = px.bar(brit, x='year', y='Total')
-fig.add_vline(x=1990)
+# Include and execute your code here
+chart = px.bar(df.head(200),
+    x="name", 
+    y="AK"
+)
+chart.show()
+```
+
+
+```{python}
+#| label: Q2 table
+#| code-summary: table example
+#| tbl-cap: "Not much of a table"
+#| tbl-cap-location: top
+# Include and execute your code here
+mydat = df.head(1000)\
+    .groupby('year')\
+    .sum()\
+    .reset_index()\
+    .tail(10)\
+    .filter(["year", "AK","AR"])
+
+display(mydat)
+
 ```
 
 
@@ -114,12 +136,13 @@ fig.add_vline(x=1990)
 
 Mary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?
 
-The notable trends through the data is that the name Mary has always been the most popular name of them. The names have gone up and down over time but in the past 45 years the names have started to become less and less common. 1946-1957 was by far the most popular time for the names to be given.
+_type your results and analysis here_
 
 ```{python}
 #| label: Q3
-#| code-summary: putting names into a list
-names = ['Mary', 'Martha', 'Peter', 'Paul']
+#| code-summary: Read and format data
+# Include and execute your code here
+
 
 ```
 
@@ -127,57 +150,33 @@ _include figures in chunks and discuss your findings in the figure._
 
 ```{python}
 #| label: Q3 chart
-#| code-summary: Filtering the correct data for the names
-
-filtered_data = df[df['name'].isin(names) & (df['year'] >= 1920) & (df['year'] <= 2000)]
+#| code-summary: plot example
+#| fig-cap: "My useless chart"
+#| fig-align: center
+# Include and execute your code here
+chart = px.bar(df.head(200),
+    x="name", 
+    y="AK"
+)
+chart.show()
 ```
 
 
 ```{python}
 #| label: Q3 table
-#| code-summary: Plotting the names and showing the differences that they have over time
-#| tbl-cap: "Name Usage Comparison"
+#| code-summary: table example
+#| tbl-cap: "Not much of a table"
 #| tbl-cap-location: top
-fig = px.bar(filtered_data, x='year', y='Total', color='name',
-             labels={'year': 'Year', 'Total': 'Total Occurrences'},
-             color_discrete_map={'Mary': 'blue', 'Martha': 'red', 'Peter': 'green', 'Paul': 'purple'})
+# Include and execute your code here
+mydat = df.head(1000)\
+    .groupby('year')\
+    .sum()\
+    .reset_index()\
+    .tail(10)\
+    .filter(["year", "AK","AR"])
 
-
-fig.add_vline(x=(1920 + 2000) / 2, line_dash="dash", line_color="black", annotation_text="Midpoint")
-
-
-fig.show()
+display(mydat)
 
 ```
-
-
-## QUESTION|TASK 4
 
 Think of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?
-
-You can see from the bar chart that the name Luke started to be more used after the first few movies of Star Wars came out. As time went on more and more people began to name their kids Luke and this can be largely due to the movies. When any of the Star Wars movies came out it would only take a year or two for the name to begin to spike in popularity.
-
-```{python}
-#| label: Q4 graph
-#| code-summary: Plotting the name luke
-#| tbl-cap: "Name Usage Comparison"
-#| tbl-cap-location: top
-
-name = 'Luke'
-
-filtered_data = df[df['name'] == name]
-
-
-fig = px.bar(filtered_data, x='year', y='Total',
-             title=f'Name Usage for {name} (1920-2000)',
-             labels={'year': 'Year', 'Total': 'Total Occurrences'})
-
-reference_years = [1977, 1980, 1983, 1999, 2002, 2005, 2015]
-
-for year in reference_years:
-    fig.add_vline(x=year, line_dash="dash", line_color="black")
-
-
-fig.show()
-
-```
