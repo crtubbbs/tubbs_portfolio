@@ -36,7 +36,9 @@ import plotly.express as px
 
 ## Elevator pitch
 
-Looking at the history of names is a very strong way of seeing how data con flucuate and change over time. Many names have times when they are poular versus when they become uupopular and people quit naming their kids those certain names. This project is an amazing way to see how this really works and what names are popular when. From seeing how different movies can affect a person being named to seeing how the Bible can affect people getting named. The possibilites are truly endless when it comes to naming your children.
+_paste your elevator pitch here_
+_A SHORT (4-5 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS._
+
 ```{python}
 #| label: project data
 #| code-summary: Read and format project data
