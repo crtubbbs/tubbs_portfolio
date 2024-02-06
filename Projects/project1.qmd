@@ -35,8 +35,7 @@ import plotly.express as px
 
 ## Elevator pitch
 
-_paste your elevator pitch here_
-_A SHORT (4-5 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS._
+Data has a wide range of different things that it can do in our everyday lives. Naming your kids has more data and patterns than you would have ever thought about beofore. These observable patterns are important to find and understand so we can make then most of them. From kids being named things due to certain movies or even from the bible, data has a story to tell.
 
 ```{python}
 #| label: project data
