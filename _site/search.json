@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "competition.html",
-    "href": "competition.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "competition.html#title-2-header",
-    "href": "competition.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
     "objectID": "story_telling.html",
     "href": "story_telling.html",
     "title": "about me",
@@ -28,127 +14,23 @@
     "text": "MarkDown Basics"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "about me",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "DS250 Projects",
     "section": "",
-    "text": "MarkDown Basics"
+    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
+    "crumbs": [
+      "DS250 Projects"
+    ]
   },
   {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
+    "objectID": "projects.html#repo-for-all-my-projects",
+    "href": "projects.html#repo-for-all-my-projects",
+    "title": "DS250 Projects",
     "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Projects/project3.html",
-    "href": "Projects/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
+    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
     "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Projects/project3.html#elevator-pitch",
-    "href": "Projects/project3.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Projects/project3.html#questiontask-1",
-    "href": "Projects/project3.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q1 chart .cell execution_count=4}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=5}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Projects/project3.html#questiontask-2",
-    "href": "Projects/project3.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=8}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Projects/project3.html#questiontask-3",
-    "href": "Projects/project3.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q3 chart .cell execution_count=10}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=11}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html",
-    "href": "Projects/project1.html",
-    "title": "Client Report - What’s in a name?",
-    "section": "",
-    "text": "Data has a wide range of different things that it can do in our everyday lives. Naming your kids has more data and patterns than you would have ever thought about beofore. These observable patterns are important to find and understand so we can make then most of them. From kids being named things due to certain movies or even from the bible, data has a story to tell.\n\n\ndefining df\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#elevator-pitch",
-    "href": "Projects/project1.html#elevator-pitch",
-    "title": "Client Report - What’s in a name?",
-    "section": "",
-    "text": "Data has a wide range of different things that it can do in our everyday lives. Naming your kids has more data and patterns than you would have ever thought about beofore. These observable patterns are important to find and understand so we can make then most of them. From kids being named things due to certain movies or even from the bible, data has a story to tell.\n\n\ndefining df\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-1",
-    "href": "Projects/project1.html#questiontask-1",
-    "title": "Client Report - What’s in a name?",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nHow does your name at your birth year compare to its use historically?\nMy name, Caleb, holds an intriguing history in terms of its popularity over time. In the year of my birth, 2002, it reached its peak with 11,655 thousand kids being named Caleb. Before that period, the name wasn’t as widely utilized. However, in the years following my birth, its popularity has been on a gradual decline.\n\n\nSets birth year and all tie births to variables\n# Include and execute your code here\n\nbirth = df.query('name == \"Caleb\" and year == 2002')\nalltime = df.query('name == \"Caleb\"')\n\n\n::: {#cell-Q1 chart .cell execution_count=4}\n\ndisplaying totals of kids named caleb in 2002\n# Include and execute your code here\ndisplay(birth.filter([\"year\",\"name\",\"Total\"]))\n\n\n\n\n\n\n\n\n\nyear\nname\nTotal\n\n\n\n\n57024\n2002\nCaleb\n11655.0\n\n\n\n\n\n2002 Total kids named Caleb\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Table of kids named caleb’ execution_count=5}\n\ntable of the name Caleb and its history\nfig = px.bar(alltime, x='year', y='Total')\nfig.add_vline(x=2002)\n\n\n                                                \n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-2",
-    "href": "Projects/project1.html#questiontask-2",
-    "title": "Client Report - What’s in a name?",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nIf I talked to someone on the phone named Brittany there would be many assumptions that I make about her age. First thing I would guess is that she or he is about 33-34 based on the fact that the name Brittany peaked in 1990 so depending on the month they would fall into that category. I would be surprised if their age was anywhere older than 40 or younger than 24.\n\n\ndefining the query of people named Brittany and getting the year and total correct\nbrit = df.query('name == \"Brittany\"').filter(['name','year','Total'])\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot of when brittany was a popular name\nfig = px.bar(brit, x='year', y='Total')\nfig.add_vline(x=1990)\n\n\n                                                \nUse of the Name Brittany\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-3",
-    "href": "Projects/project1.html#questiontask-3",
-    "title": "Client Report - What’s in a name?",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?\nThe notable trends through the data is that the name Mary has always been the most popular name of them. The names have gone up and down over time but in the past 45 years the names have started to become less and less common. 1946-1957 was by far the most popular time for the names to be given.\n\n\nputting names into a list\nnames = ['Mary', 'Martha', 'Peter', 'Paul']\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nFiltering the correct data for the names\nfiltered_data = df[df['name'].isin(names) & (df['year'] &gt;= 1920) & (df['year'] &lt;= 2000)]\n\n\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Name Usage Comparison’ execution_count=10}\n\nPlotting the names and showing the differences that they have over time\nfig = px.bar(filtered_data, x='year', y='Total', color='name',\n             labels={'year': 'Year', 'Total': 'Total Occurrences'},\n             color_discrete_map={'Mary': 'blue', 'Martha': 'red', 'Peter': 'green', 'Paul': 'purple'})\n\nfig.add_vline(x=(1920 + 2000) / 2, line_dash=\"dash\", line_color=\"black\", annotation_text=\"Midpoint\")\n\nfig.show()\n\n\n                                                \n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
+      "DS250 Projects"
     ]
   },
   {
@@ -207,57 +89,78 @@
     ]
   },
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Caleb Tubbs’s CV",
+    "objectID": "Projects/project2.html",
+    "href": "Projects/project2.html",
+    "title": "Client Report - [Late flights and missing data]",
     "section": "",
-    "text": "Brigham Young University - Idaho Student\n\ncalebtubbs17@gmail.com\n\n\n\nAttending Brigham Young University - Idaho Computer Science Major Data Science Minor\n\n\nProgramming in Python, Mysql, Javascript, R, Html, Css\n\n\n\nSoftware engineering Computer Science\n\n\n\n\n2022-Current Brigham Young University-Idaho, Rexburg.\n\n\n\nEagle Scout\n\n\n\n2020 Helena Motors, Helena, MT\n\nPorter\nOrganized where cars would be placed in the parking lot and helped with cleaning and other responsibilities dealing with the customers.\n\n2021-2022 Progrexion, Rexburg, Id\n\nSales agent\nTook phone calls from potential clients and turned the calls into sales.\n\n2023 Cedars Lodge, Ketchikan, AK\n\nFish Cutter\nLong hours of hard labor cutting fish for up to 14 hours a day. It made my work ethic and drive become much stronger"
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\nurl_flights = 'https://github.com/byuidatascience/data4missing/raw/master/data-raw/flights_missing/flights_missing.json'\nflights = pd.read_json(url_flights)\n\n\nHighlight the Questions and Tasks"
   },
   {
-    "objectID": "resume.html#currently",
-    "href": "resume.html#currently",
-    "title": "Caleb Tubbs’s CV",
+    "objectID": "Projects/project2.html#elevator-pitch",
+    "href": "Projects/project2.html#elevator-pitch",
+    "title": "Client Report - [Late flights and missing data]",
     "section": "",
-    "text": "Attending Brigham Young University - Idaho Computer Science Major Data Science Minor\n\n\nProgramming in Python, Mysql, Javascript, R, Html, Css\n\n\n\nSoftware engineering Computer Science"
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\nurl_flights = 'https://github.com/byuidatascience/data4missing/raw/master/data-raw/flights_missing/flights_missing.json'\nflights = pd.read_json(url_flights)\n\n\nHighlight the Questions and Tasks"
   },
   {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Caleb Tubbs’s CV",
-    "section": "",
-    "text": "2022-Current Brigham Young University-Idaho, Rexburg."
+    "objectID": "Projects/project2.html#questiontask-1",
+    "href": "Projects/project2.html#questiontask-1",
+    "title": "Client Report - [Late flights and missing data]",
+    "section": "QUESTION|TASK 1",
+    "text": "QUESTION|TASK 1\nFix all of the varied missing data types in the data to be consistent (all missing values should be displayed as “NaN”). In your report include one record example (one row) from your new data, in the raw JSON format. Your example should display the “NaN” for at least one missing value.__\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\nflights.replace(-999, pd.NA, inplace=True)\n\n\n\n\nplot example\n# Include and execute your code here\n\nvalue = flights.iloc[0]\nprint(value)\n\n\nairport_code                                                                   ATL\nairport_name                     Atlanta, GA: Hartsfield-Jackson Atlanta Intern...\nmonth                                                                      January\nyear                                                                        2005.0\nnum_of_flights_total                                                         35048\nnum_of_delays_carrier                                                        1500+\nnum_of_delays_late_aircraft                                                   &lt;NA&gt;\nnum_of_delays_nas                                                             4598\nnum_of_delays_security                                                          10\nnum_of_delays_weather                                                          448\nnum_of_delays_total                                                           8355\nminutes_delayed_carrier                                                   116423.0\nminutes_delayed_late_aircraft                                               104415\nminutes_delayed_nas                                                       207467.0\nminutes_delayed_security                                                       297\nminutes_delayed_weather                                                      36931\nminutes_delayed_total                                                       465533\nName: 0, dtype: object"
   },
   {
-    "objectID": "resume.html#awards",
-    "href": "resume.html#awards",
-    "title": "Caleb Tubbs’s CV",
-    "section": "",
-    "text": "Eagle Scout"
+    "objectID": "Projects/project2.html#questiontask-2",
+    "href": "Projects/project2.html#questiontask-2",
+    "title": "Client Report - [Late flights and missing data]",
+    "section": "QUESTION|TASK 2",
+    "text": "QUESTION|TASK 2\nWhich airport has the worst delays? Discuss the metric you chose, and why you chose it to determine the “worst” airport. Your answer should include a summary table that lists (for each airport) the total number of flights, total number of delayed flights, proportion of delayed flights, and average delay time in hours.\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ngrouped = flights.groupby('airport_code')\n\n# Calculate total number of flights for each airport\ntotal_flights = grouped['num_of_flights_total'].sum()\n\n# Calculate total number of delayed flights for each airport\ntotal_delayed_flights = grouped['num_of_delays_total'].sum()\n\n# Calculate proportion of delayed flights for each airport\nproportion_delayed = total_delayed_flights / total_flights\n\n# Calculate average delay time for each airport\naverage_delay_time = grouped['minutes_delayed_total'].sum() / total_delayed_flights / 60  # Convert minutes to hours\n\n# Create summary table\nsummary_table = pd.DataFrame({\n    'Total Flights': total_flights,\n    'Delayed Flights': total_delayed_flights,\n    'Proportion Delayed': proportion_delayed,\n    'Average Delay Time (hours)': average_delay_time\n})\n\n# Sort summary table by proportion of delayed flights\nsummary_table = summary_table.sort_values(by='Average Delay Time (hours)', ascending=False)\n\n# Display summary table\nprint(summary_table)\n\n\n              Total Flights  Delayed Flights  Proportion Delayed  \\\nairport_code                                                       \nORD                 3597588           830825            0.230939   \nSFO                 1630945           425604            0.260955   \nIAD                  851571           168467            0.197831   \nATL                 4430047           902443            0.203710   \nDEN                 2513974           468519            0.186366   \nSLC                 1403384           205160            0.146189   \nSAN                  917862           175132            0.190804   \n\n              Average Delay Time (hours)  \nairport_code                              \nORD                             1.130525  \nSFO                             1.039718  \nIAD                             1.017358  \nATL                             0.996996  \nDEN                             0.895495  \nSLC                             0.822396  \nSAN                             0.787620  \n\n\n\n\nplot example\n# Include and execute your code here\n\n\n\n\ntable example\n# Include and execute your code here"
   },
   {
-    "objectID": "resume.html#publications",
-    "href": "resume.html#publications",
-    "title": "Isaac Newtons’s CV",
-    "section": "",
-    "text": "1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001"
+    "objectID": "Projects/project2.html#questiontask-3",
+    "href": "Projects/project2.html#questiontask-3",
+    "title": "Client Report - [Late flights and missing data]",
+    "section": "QUESTION|TASK 3",
+    "text": "QUESTION|TASK 3\nWhat is the best month to fly if you want to avoid delays of any length? Discuss the metric you chose and why you chose it to calculate your answer. Include one chart to help support your answer, with the x-axis ordered by month. (To answer this question, you will need to remove any rows that are missing the Month variable.)\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n\n\n\n\ntable example\n# Include and execute your code here"
   },
   {
-    "objectID": "resume.html#occupation",
-    "href": "resume.html#occupation",
-    "title": "Caleb Tubbs’s CV",
-    "section": "",
-    "text": "2020 Helena Motors, Helena, MT\n\nPorter\nOrganized where cars would be placed in the parking lot and helped with cleaning and other responsibilities dealing with the customers.\n\n2021-2022 Progrexion, Rexburg, Id\n\nSales agent\nTook phone calls from potential clients and turned the calls into sales.\n\n2023 Cedars Lodge, Ketchikan, AK\n\nFish Cutter\nLong hours of hard labor cutting fish for up to 14 hours a day. It made my work ethic and drive become much stronger"
-  },
-  {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
+    "objectID": "ml.html",
+    "href": "ml.html",
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics"
   },
   {
-    "objectID": "exploration.html#title-2-header",
-    "href": "exploration.html#title-2-header",
+    "objectID": "ml.html#title-2-header",
+    "href": "ml.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "full_stack.html#title-2-header",
+    "href": "full_stack.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "competition.html",
+    "href": "competition.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "competition.html#title-2-header",
+    "href": "competition.html#title-2-header",
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics"
@@ -275,6 +178,131 @@
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "exploration.html#title-2-header",
+    "href": "exploration.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "index.html#title-2-header",
+    "href": "index.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "Projects/project1.html",
+    "href": "Projects/project1.html",
+    "title": "Client Report - What’s in a name?",
+    "section": "",
+    "text": "Data has a wide range of different things that it can do in our everyday lives. Naming your kids has more data and patterns than you would have ever thought about beofore. These observable patterns are important to find and understand so we can make then most of them. From kids being named things due to certain movies or even from the bible, data has a story to tell.\n\n\ndefining df\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
+  },
+  {
+    "objectID": "Projects/project1.html#elevator-pitch",
+    "href": "Projects/project1.html#elevator-pitch",
+    "title": "Client Report - What’s in a name?",
+    "section": "",
+    "text": "Data has a wide range of different things that it can do in our everyday lives. Naming your kids has more data and patterns than you would have ever thought about beofore. These observable patterns are important to find and understand so we can make then most of them. From kids being named things due to certain movies or even from the bible, data has a story to tell.\n\n\ndefining df\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
+  },
+  {
+    "objectID": "Projects/project1.html#questiontask-1",
+    "href": "Projects/project1.html#questiontask-1",
+    "title": "Client Report - What’s in a name?",
+    "section": "QUESTION|TASK 1",
+    "text": "QUESTION|TASK 1\nHow does your name at your birth year compare to its use historically?\nMy name, Caleb, holds an intriguing history in terms of its popularity over time. In the year of my birth, 2002, it reached its peak with 11,655 thousand kids being named Caleb. Before that period, the name wasn’t as widely utilized. However, in the years following my birth, its popularity has been on a gradual decline.\n\n\nSets birth year and all tie births to variables\n# Include and execute your code here\n\nbirth = df.query('name == \"Caleb\" and year == 2002')\nalltime = df.query('name == \"Caleb\"')\n\n\n\n\ndisplaying totals of kids named caleb in 2002\n# Include and execute your code here\ndisplay(birth.filter([\"year\",\"name\",\"Total\"]))\n\n\n\n\n\n\n\n\n\nyear\nname\nTotal\n\n\n\n\n57024\n2002\nCaleb\n11655.0\n\n\n\n\n\n2002 Total kids named Caleb\n\n\n\n\ntable of the name Caleb and its history\nfig = px.bar(alltime, x='year', y='Total')\nfig.add_vline(x=2002)"
+  },
+  {
+    "objectID": "Projects/project1.html#questiontask-2",
+    "href": "Projects/project1.html#questiontask-2",
+    "title": "Client Report - What’s in a name?",
+    "section": "QUESTION|TASK 2",
+    "text": "QUESTION|TASK 2\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nIf I talked to someone on the phone named Brittany there would be many assumptions that I make about her age. First thing I would guess is that she or he is about 33-34 based on the fact that the name Brittany peaked in 1990 so depending on the month they would fall into that category. I would be surprised if their age was anywhere older than 40 or younger than 24.\n\n\ndefining the query of people named Brittany and getting the year and total correct\nbrit = df.query('name == \"Brittany\"').filter(['name','year','Total'])\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot of when brittany was a popular name\nfig = px.bar(brit, x='year', y='Total')\nfig.add_vline(x=1990)\n\n\n\n                                                \nUse of the Name Brittany"
+  },
+  {
+    "objectID": "Projects/project1.html#questiontask-3",
+    "href": "Projects/project1.html#questiontask-3",
+    "title": "Client Report - What’s in a name?",
+    "section": "QUESTION|TASK 3",
+    "text": "QUESTION|TASK 3\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?\nThe notable trends through the data is that the name Mary has always been the most popular name of them. The names have gone up and down over time but in the past 45 years the names have started to become less and less common. 1946-1957 was by far the most popular time for the names to be given.\n\n\nputting names into a list\nnames = ['Mary', 'Martha', 'Peter', 'Paul']\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nFiltering the correct data for the names\nfiltered_data = df[df['name'].isin(names) & (df['year'] &gt;= 1920) & (df['year'] &lt;= 2000)]\n\n\n\n\nPlotting the names and showing the differences that they have over time\nfig = px.bar(filtered_data, x='year', y='Total', color='name',\n             labels={'year': 'Year', 'Total': 'Total Occurrences'},\n             color_discrete_map={'Mary': 'blue', 'Martha': 'red', 'Peter': 'green', 'Paul': 'purple'})\n\nfig.add_vline(x=(1920 + 2000) / 2, line_dash=\"dash\", line_color=\"black\", annotation_text=\"Midpoint\")\n\nfig.show()"
+  },
+  {
+    "objectID": "Projects/project1.html#questiontask-4",
+    "href": "Projects/project1.html#questiontask-4",
+    "title": "Client Report - What’s in a name?",
+    "section": "QUESTION|TASK 4",
+    "text": "QUESTION|TASK 4\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\nYou can see from the bar chart that the name Luke started to be more used after the first few movies of Star Wars came out. As time went on more and more people began to name their kids Luke and this can be largely due to the movies. When any of the Star Wars movies came out it would only take a year or two for the name to begin to spike in popularity.\n\n\nPlotting the name luke\nname = 'Luke'\n\nfiltered_data = df[df['name'] == name]\n\nfig = px.bar(filtered_data, x='year', y='Total',\n             title=f'Name Usage for {name} (1920-2000)',\n             labels={'year': 'Year', 'Total': 'Total Occurrences'})\n\nreference_years = [1977, 1980, 1983, 1999, 2002, 2005, 2015]\n\nfor year in reference_years:\n    fig.add_vline(x=year, line_dash=\"dash\", line_color=\"black\")\n\nfig.show()"
+  },
+  {
+    "objectID": "Projects/project3.html",
+    "href": "Projects/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#elevator-pitch",
+    "href": "Projects/project3.html#elevator-pitch",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#questiontask-1",
+    "href": "Projects/project3.html#questiontask-1",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "QUESTION|TASK 1",
+    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q1 chart .cell execution_count=4}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=5}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#questiontask-2",
+    "href": "Projects/project3.html#questiontask-2",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "QUESTION|TASK 2",
+    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=8}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#questiontask-3",
+    "href": "Projects/project3.html#questiontask-3",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "QUESTION|TASK 3",
+    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q3 chart .cell execution_count=10}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=11}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
   },
   {
     "objectID": "Projects/project5.html",
@@ -332,117 +360,52 @@
     ]
   },
   {
-    "objectID": "Projects/project2.html",
-    "href": "Projects/project2.html",
-    "title": "Client Report - [Insert Project Title]",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Caleb Tubbs’s CV",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
+    "text": "Brigham Young University - Idaho Student\n\ncalebtubbs17@gmail.com\n\n\n\nAttending Brigham Young University - Idaho Computer Science Major Data Science Minor\n\n\nProgramming in Python, Mysql, Javascript, R, Html, Css\n\n\n\nSoftware engineering Computer Science\n\n\n\n\n2022-Current Brigham Young University-Idaho, Rexburg.\n\n\n\nEagle Scout\n\n\n\n2020 Helena Motors, Helena, MT\n\nPorter\nOrganized where cars would be placed in the parking lot and helped with cleaning and other responsibilities dealing with the customers.\n\n2021-2022 Progrexion, Rexburg, Id\n\nSales agent\nTook phone calls from potential clients and turned the calls into sales.\n\n2023 Cedars Lodge, Ketchikan, AK\n\nFish Cutter\nLong hours of hard labor cutting fish for up to 14 hours a day. It made my work ethic and drive become much stronger"
   },
   {
-    "objectID": "Projects/project2.html#elevator-pitch",
-    "href": "Projects/project2.html#elevator-pitch",
-    "title": "Client Report - [Insert Project Title]",
+    "objectID": "resume.html#currently",
+    "href": "resume.html#currently",
+    "title": "Caleb Tubbs’s CV",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
+    "text": "Attending Brigham Young University - Idaho Computer Science Major Data Science Minor\n\n\nProgramming in Python, Mysql, Javascript, R, Html, Css\n\n\n\nSoftware engineering Computer Science"
   },
   {
-    "objectID": "Projects/project2.html#questiontask-1",
-    "href": "Projects/project2.html#questiontask-1",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCOPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q1 chart .cell execution_count=4}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=5}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#questiontask-2",
-    "href": "Projects/project2.html#questiontask-2",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q2 chart .cell execution_count=7}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=8}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#questiontask-3",
-    "href": "Projects/project2.html#questiontask-3",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n::: {#cell-Q3 chart .cell execution_count=10}\n\nplot example\n# Include and execute your code here\nchart = px.bar(df.head(200),\n    x=\"name\", \n    y=\"AK\"\n)\nchart.show()\n\n\n                                                \nMy useless chart\n\n:::\n::: {#cell-Q3 table .cell .tbl-cap-location-top tbl-cap=‘Not much of a table’ execution_count=11}\n\ntable example\n# Include and execute your code here\nmydat = df.head(1000)\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"AK\",\"AR\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "DS250 Projects",
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Caleb Tubbs’s CV",
     "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
-    "crumbs": [
-      "DS250 Projects"
-    ]
+    "text": "2022-Current Brigham Young University-Idaho, Rexburg."
   },
   {
-    "objectID": "projects.html#repo-for-all-my-projects",
-    "href": "projects.html#repo-for-all-my-projects",
-    "title": "DS250 Projects",
+    "objectID": "resume.html#awards",
+    "href": "resume.html#awards",
+    "title": "Caleb Tubbs’s CV",
     "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
-    "crumbs": [
-      "DS250 Projects"
-    ]
+    "text": "Eagle Scout"
   },
   {
-    "objectID": "ml.html",
-    "href": "ml.html",
-    "title": "about me",
+    "objectID": "resume.html#occupation",
+    "href": "resume.html#occupation",
+    "title": "Caleb Tubbs’s CV",
     "section": "",
-    "text": "MarkDown Basics"
+    "text": "2020 Helena Motors, Helena, MT\n\nPorter\nOrganized where cars would be placed in the parking lot and helped with cleaning and other responsibilities dealing with the customers.\n\n2021-2022 Progrexion, Rexburg, Id\n\nSales agent\nTook phone calls from potential clients and turned the calls into sales.\n\n2023 Cedars Lodge, Ketchikan, AK\n\nFish Cutter\nLong hours of hard labor cutting fish for up to 14 hours a day. It made my work ethic and drive become much stronger"
   },
   {
-    "objectID": "ml.html#title-2-header",
-    "href": "ml.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "full_stack.html",
-    "href": "full_stack.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "full_stack.html#title-2-header",
-    "href": "full_stack.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Projects/project1.html#questiontask-4",
-    "href": "Projects/project1.html#questiontask-4",
-    "title": "Client Report - What’s in a name?",
+    "objectID": "Projects/project2.html#questiontask-4",
+    "href": "Projects/project2.html#questiontask-4",
+    "title": "Client Report - [Late flights and missing data]",
     "section": "QUESTION|TASK 4",
-    "text": "QUESTION|TASK 4\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\nYou can see from the bar chart that the name Luke started to be more used after the first few movies of Star Wars came out. As time went on more and more people began to name their kids Luke and this can be largely due to the movies. When any of the Star Wars movies came out it would only take a year or two for the name to begin to spike in popularity.\n::: {#cell-Q4 graph .cell .tbl-cap-location-top tbl-cap=‘Name Usage Comparison’ execution_count=11}\n\nPlotting the name luke\nname = 'Luke'\n\nfiltered_data = df[df['name'] == name]\n\nfig = px.bar(filtered_data, x='year', y='Total',\n             title=f'Name Usage for {name} (1920-2000)',\n             labels={'year': 'Year', 'Total': 'Total Occurrences'})\n\nreference_years = [1977, 1980, 1983, 1999, 2002, 2005, 2015]\n\nfor year in reference_years:\n    fig.add_vline(x=year, line_dash=\"dash\", line_color=\"black\")\n\nfig.show()\n\n\n                                                \n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
+    "text": "QUESTION|TASK 4\nAccording to the BTS website, the “Weather” category only accounts for severe weather delays. Mild weather delays are not counted in the “Weather” category, but are actually included in both the “NAS” and “Late-Arriving Aircraft” categories. Your job is to create a new column that calculates the total number of flights delayed by weather (both severe and mild). You will need to replace all the missing values in the Late Aircraft variable with the mean. Show your work by printing the first 5 rows of data in a table. Use these three rules for your calculations:__\n100% of delayed flights in the Weather category are due to weather\n30% of all delayed flights in the Late-Arriving category are due to weather.\nFrom April to August, 40% of delayed flights in the NAS category are due to weather. The rest of the months, the proportion rises to 65%."
+  },
+  {
+    "objectID": "Projects/project2.html#questiontask-5",
+    "href": "Projects/project2.html#questiontask-5",
+    "title": "Client Report - [Late flights and missing data]",
+    "section": "QUESTION|TASK 5",
+    "text": "QUESTION|TASK 5\nUsing the new weather variable calculated above, create a barplot showing the proportion of all flights that are delayed by weather at each airport. Discuss what you learn from this graph."
   }
 ]
